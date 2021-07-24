@@ -147,23 +147,6 @@ class PolygonIterator(Polygon):
                                  reverse=True)
         return sorted_polygons[0]
 
-
-
-test1 = PolygonIterator(10,1)
-print(test1._current_poly)
-print(f'Description of PolygonIterator Claas Object is : {test1.__repr__()}')
-for p in test1:
-    print(p._current_poly)
-#print(f'Current Polygon Index in the iterable list is : {test1._current_poly}')
-#print(f'Current Polygon object Description is : {test1.__iter__().__repr__()}')
-#print(f'No. of polygons in the iterator is : {test1._polygons.__len__()}')
-#print(f'No. of edges in the current polygon is : {test1.__next__().count_edges}')
-#test1.__next__()    # Move to next polygon
-#print(f'No. of edges in the current polygon is : {test1.__next__().count_edges}')
-#print(f'No. of edges in the current polygon is : {test1.__next__().count_edges}')
-#print(f'No. of edges in the current polygon is : {test1.__next__().count_edges}')
-#print(f'No. of edges in the current polygon is : {test1.__next__().count_edges}')
-
 class MyPolygonSeq(MyPolygon):
     """
     Polygon sequence class derived from the polygon class object
@@ -263,3 +246,5 @@ class MyPolygonSeq(MyPolygon):
             print("Reached start of sequence")
             return self.__getitem__(3)
             # raise IndexError
+
+# End of file
